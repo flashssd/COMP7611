@@ -189,16 +189,3 @@ Install the dependency if needed:
 ```bash
 pip install openai
 ```
-
-### Recommended Workflow
-
-1. Open [assignment 1.ipynb](assignment%201.ipynb).
-2. Insert your OpenRouter API key in the first code cell.
-3. Run the first code cell to initialize the client and model list.
-4. Complete the StruQ answer markdown cell.
-5. Fill in the prompt string for each attack section.
-6. Run the example-output cells.
-7. Run the ASR evaluation cells.
-8. Implement and test the three defenses.
-9. Complete the final analysis markdown cell.
-10. Export the finished notebook to PDF for submission.
