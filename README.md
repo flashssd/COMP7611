@@ -8,13 +8,18 @@ This assignment studies prompt injection attacks against large language models a
 
 You will complete the notebook [assignment 1.ipynb](assignment%201.ipynb) by:
 
-1. Answering a short question about the StruQ paper (**2 points**).
+1. Answering a short question about the [StruQ](https://arxiv.org/abs/2402.06363) paper (**2 points**).
 2. Implementing eight prompt injection attacks (**8 points**, **1** per method).
 3. Measuring attack success rate (ASR) for each attack across four models.
 4. Implementing three defenses (**6 points**, **2** per defense).
 5. Writing a short analysis of the experimental results (**4 points**).
 
 The notebook uses the OpenRouter API with four free models.
+
+## References
+
+- **StruQ:** [https://arxiv.org/abs/2402.06363](https://arxiv.org/abs/2402.06363)
+- **SecAlign:** [https://arxiv.org/abs/2410.05451](https://arxiv.org/abs/2410.05451)
 
 ## Learning Goals
 
@@ -32,7 +37,7 @@ Points are allocated as in the assignment brief: Related Work **2**, Attacks **8
 
 ### 1. Related Work Question (2 points)
 
-Read the StruQ paper and answer the notebook question:
+Read the [StruQ](https://arxiv.org/abs/2402.06363) paper and answer the notebook question:
 
 What reserved tokens does the StruQ system employ, and is it likely to mount a Completion-Close attack against these tokens?
 
@@ -71,8 +76,8 @@ The helper function in the notebook treats an attack as successful only if the m
 
 Implement three defenses in the defense section of the notebook:
 
-1. One preprocessing or filtering defense from StruQ (2 points).
-2. Two prompting-based defenses from Section 4.3 of SecAlign (2 points each).
+1. One preprocessing or filtering defense from [StruQ](https://arxiv.org/abs/2402.06363) (2 points).
+2. Two prompting-based defenses from Section 4.3 of [SecAlign](https://arxiv.org/abs/2410.05451) (2 points each).
 
 Your defense implementation should be evaluated against the attack prompts you created. The goal is not to eliminate every attack perfectly, but to show that you understand how the defense works and can reason about its effectiveness.
 
@@ -107,9 +112,9 @@ Submission email:
 
 | Component | Points |
 |-----------|--------|
-| Related Work (StruQ question) | 2 |
+| Related Work ([StruQ](https://arxiv.org/abs/2402.06363) question) | 2 |
 | Eight attack methods (see list above) | 8 (1 each) |
-| Three defenses (StruQ filtering + two SecAlign Section 4.3) | 6 (2 each) |
+| Three defenses ([StruQ](https://arxiv.org/abs/2402.06363) filtering + two [SecAlign](https://arxiv.org/abs/2410.05451) §4.3) | 6 (2 each) |
 | Takeaway / result analysis | 4 |
 | **Total** | **20** |
 
