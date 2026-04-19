@@ -202,23 +202,3 @@ pip install openai
 8. Implement and test the three defenses.
 9. Complete the final analysis markdown cell.
 10. Export the finished notebook to PDF for submission.
-
-## Other Files In This Workspace
-
-[service.sh](service.sh), [llm_service.sh](llm_service.sh), and [config.json](config.json) are not required for running the notebook.
-
-## Practical Advice
-
-1. Test each attack with a single sample call before launching 100 repeated trials.
-2. Keep attack prompts short and explicit so you can reason about why they work.
-3. If output variability is high, inspect several raw completions before drawing conclusions.
-4. When comparing models, focus on consistent behavior patterns rather than one-off successes.
-5. In the analysis section, explain why a defense helped or failed instead of only listing scores.
-
-## Reference Files In This Workspace
-
-1. Notebook: [assignment 1.ipynb](assignment%201.ipynb)
-2. Archived original PDF: [LLM Prompt Injection Challenge - COMP7611 Assignment (Deadline Apr. 26).pdf](LLM%20Prompt%20Injection%20Challenge%20-%20COMP7611%20Assignment%20%28Deadline%20Apr.%2026%29.pdf)
-3. Old service launcher: [service.sh](service.sh)
-4. Old model launcher: [llm_service.sh](llm_service.sh)
-5. Old auth config: [config.json](config.json)
