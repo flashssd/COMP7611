@@ -8,11 +8,11 @@ This assignment studies prompt injection attacks against large language models a
 
 You will complete the notebook [assignment 1.ipynb](assignment%201.ipynb) by:
 
-1. Answering a short question about the StruQ paper.
-2. Implementing eight prompt injection attacks.
+1. Answering a short question about the StruQ paper (**2 points**).
+2. Implementing eight prompt injection attacks (**8 points**, **1** per method).
 3. Measuring attack success rate (ASR) for each attack across four models.
-4. Implementing three defenses.
-5. Writing a short analysis of the experimental results.
+4. Implementing three defenses (**6 points**, **2** per defense).
+5. Writing a short analysis of the experimental results (**4 points**).
 
 The notebook uses the OpenRouter API with four free models.
 
@@ -28,7 +28,9 @@ After completing this assignment, you should be able to:
 
 ## Assignment Tasks
 
-### 1. Related Work Question
+Points are allocated as in the assignment brief: Related Work **2**, Attacks **8**, Defenses **6**, Takeaway **4** (**20** total).
+
+### 1. Related Work Question (2 points)
 
 Read the StruQ paper and answer the notebook question:
 
@@ -36,7 +38,7 @@ What reserved tokens does the StruQ system employ, and is it likely to mount a C
 
 Write your answer in the markdown cell under the StruQ section in [assignment 1.ipynb](assignment%201.ipynb).
 
-### 2. Attack Implementation
+### 2. Attack Implementation (8 points total; 1 point per method)
 
 Your target task in the notebook is:
 
@@ -48,14 +50,14 @@ Each prompt injection should try to hijack that instruction so the model outputs
 
 You must fill in the attack strings for all eight attack categories already scaffolded in the notebook:
 
-1. Naive Attack
-2. Ignore Attack
-3. Escape-Deletion
-4. Escape-Separation
-5. Completion-Other
-6. Completion-OtherCmb
-7. Completion-Real
-8. Completion-RealCmb
+1. Naive Attack (1 point)
+2. Ignore Attack (1 point)
+3. Escape-Deletion (1 point)
+4. Escape-Separation (1 point)
+5. Completion-Other (1 point)
+6. Completion-OtherCmb (1 point)
+7. Completion-Real (1 point)
+8. Completion-RealCmb (1 point)
 
 For each attack:
 
@@ -65,16 +67,16 @@ For each attack:
 
 The helper function in the notebook treats an attack as successful only if the model response is exactly `HACKED!`.
 
-### 3. Defense Implementation
+### 3. Defense Implementation (6 points total; 2 points per defense)
 
 Implement three defenses in the defense section of the notebook:
 
-1. One preprocessing or filtering defense from StruQ.
-2. Two prompting-based defenses from Section 4.3 of SecAlign.
+1. One preprocessing or filtering defense from StruQ (2 points).
+2. Two prompting-based defenses from Section 4.3 of SecAlign (2 points each).
 
 Your defense implementation should be evaluated against the attack prompts you created. The goal is not to eliminate every attack perfectly, but to show that you understand how the defense works and can reason about its effectiveness.
 
-### 4. Result Analysis
+### 4. Result Analysis / Takeaway (4 points)
 
 In the final markdown answer cell, discuss:
 
@@ -103,7 +105,13 @@ Submission email:
 
 ## Grading Notes
 
-Total: 20 points
+| Component | Points |
+|-----------|--------|
+| Related Work (StruQ question) | 2 |
+| Eight attack methods (see list above) | 8 (1 each) |
+| Three defenses (StruQ filtering + two SecAlign Section 4.3) | 6 (2 each) |
+| Takeaway / result analysis | 4 |
+| **Total** | **20** |
 
 Grading emphasizes:
 
@@ -111,7 +119,7 @@ Grading emphasizes:
 2. Coverage of the required attacks and defenses.
 3. Quality of your analysis and conclusions.
 
-The assignment is not graded solely by who gets the highest ASR. A careful and technically sound submission matters more than extreme attack performance.
+Per the assignment brief, attack and defense marks are awarded for correct implementation (completion), not for achieving a particular ASR. The takeaway is graded on thoroughness of your analysis; raw ASR numbers alone are not enough.
 
 ## OpenRouter Setup
 
